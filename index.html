@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Borne | Home</title>
+    <link rel="shortcut icon" href="./image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="head-left">
+                <a class="brand-lockup" href="./index.html" aria-label="Shadow Borne home">
+                    <span class="brand-mark">S</span>
+                    <span class="logo-text">
+                        Shadow
+                        <span>Borne</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="head-center">
+                <ul>
+                    <li><a href="#recommendations">Home</a></li>
+                    <li><a href="./html/browse.html">Browse</a></li>
+                    <li><a href="./html/genres.html">Genres</a></li>
+                    <li><a href="./html/movies.html">Movies</a></li>
+                    <li><a href="./html/trending.html">Trending</a></li>
+                </ul>
+            </div>
+
+            <div class="head-right">
+                <div class="right-search">
+                    <label for="search">
+                        <i class="ri-search-line"></i>
+                    </label>
+
+                    <input type="text" id="search" class="search" placeholder="Search">
+                </div>
+
+                <div class="right-account">
+                    <button class="account" type="button" aria-label="Open account">
+                        <i class="ri-user-3-line"></i>
+                    </button>
+                </div>
+
+                <div class="right-login">
+                    <button class="login" type="button">
+                        <i class="ri-login-box-line"></i> Login
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-search-results" aria-live="polite" hidden>
+            <div class="nav-search-head">
+                <span>Quick search</span>
+                <span class="nav-search-count"></span>
+            </div>
+
+            <div class="nav-search-grid"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-head" id="recommendations">
+            <h1>Recommendations</h1>
+
+            <div class="recommendation-container">
+                <div class="images"></div>
+                <div class="img-buttons">
+                    <button class="left-btn" type="button" aria-label="Previous recommendation">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+
+                    <button class="right-btn" type="button" aria-label="Next recommendation">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+
+                <div class="recommendation-dots" aria-label="Recommendation banners"></div>
+            </div>
+        </div>
+
+        <div class="main-container" id="anime-library">
+            <div class="main-container-head">
+                <div class="main-left">
+                    <h2>Anime</h2>
+                </div>
+
+                <div class="main-right">
+                    <span class="filter-name">LATEST ANIME</span>
+
+                    <ul>
+                        <li class="active" data-category="all">All</li>
+                        <li data-category="action">Action</li>
+                        <li data-category="adventure">Adventure</li>
+                        <li data-category="comedy">Comedy</li>
+                        <li data-category="romance">Romance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="posters"></div>
+
+            <section class="search-results" aria-live="polite" hidden>
+                <div class="search-results-head">
+                    <h2>Search results</h2>
+
+                    <span class="search-results-count"></span>
+                </div>
+
+                <div class="search-results-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="./index.html">
+                <span class="brand-mark">S</span>
+                <span>Shadow<span>Borne</span></span>
+            </a>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="./html/browse.html">Browse</a>
+                <a href="./html/genres.html">Genres</a>
+                <a href="./html/movies.html">Movies</a>
+                <a href="./html/trending.html">Trending</a>
+                <a href="./html/account.html">Account</a>
+            </nav>
+
+            <p class="footer-copy">&copy; 2026 ShadowBorne. Curated for late-night stories.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
