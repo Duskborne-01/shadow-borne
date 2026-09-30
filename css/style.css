@@ -665,7 +665,8 @@ main {
 .site-footer {
     margin-top: 4rem;
     border-top: 1px solid var(--border-color);
-    background: linear-gradient(135deg, #141619, #1d1b19);
+    background-image: url('../image/footer.png');
+    /* background: linear-gradient(135deg, #141619, #1d1b19); */
 }
 
 .footer-inner {
