@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shadow Borne | Account</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+
+<body class="catalog-page account-page" data-page="account">
+    <header>
+        <nav>
+            <a class="player-brand" href="../index.html">
+                <b class="brand-mark">S</b>
+                <span>
+                    <em>Shadow</em>
+                    Borne
+                </span>
+            </a>
+
+            <div class="head-center">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./browse.html">Browse</a></li>
+                    <li><a href="./genres.html">Genres</a></li>
+                    <li><a href="./movies.html">Movies</a></li>
+                    <li><a href="./trending.html">Trending</a></li>
+                </ul>
+            </div>
+
+            <a class="back-link" href="../index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to browse
+            </a>
+        </nav>
+    </header>
+
+    <main class="catalog-main account-main">
+        <span class="catalog-kicker">Your space</span>
+
+        <h1 class="catalog-title">Account</h1>
+
+        <p class="catalog-intro">Shape your profile and keep your ShadowBorne identity ready across your watch history.
+        </p>
+
+        <section class="profile-layout">
+            <div class="profile-card">
+                <div class="avatar-wrap">
+                    <div class="profile-avatar" id="profile-avatar">
+                        <i class="ri-user-3-line"></i>
+                    </div>
+
+                    <label class="camera-button" for="avatar-input" title="Change profile picture">
+                        <i class="ri-camera-line"></i>
+                    </label>
+
+                    <input id="avatar-input" type="file" accept="image/*" hidden>
+                </div>
+
+                <h2 id="profile-heading">Your profile</h2>
+
+                <p class="account-status">Guest account</p>
+                <button class="profile-action" id="logout-account" type="button">Log out</button>
+            </div>
+
+            <form class="profile-form" id="profile-form">
+                <div class="profile-form-head">
+                    <span class="catalog-kicker">Profile details</span>
+                    <span id="profile-message"></span>
+                </div>
+
+                <label>
+                    Username
+                    <input id="profile-username" name="username" maxlength="24" placeholder="Choose a username">
+                </label>
+
+                <label>
+                    Full name
+                    <input id="profile-full-name" name="fullName" maxlength="60" placeholder="Your full name">
+                </label>
+
+                <label>
+                    Date of birth
+                    <input id="profile-dob" name="dob" type="date">
+                </label>
+
+                <label>
+                    Email
+                    <input class="account-email" name="email" type="email" readonly>
+                </label>
+
+                <label>
+                    Phone number
+                    <input class="account-phone" name="phone" type="tel" readonly>
+                </label>
+
+                <button class="profile-save" type="submit">Save profile</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/catalog.js"></script>
+</body>
+
+</html>

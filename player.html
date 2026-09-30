@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Borne | Player</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <style>
+        .video-shell {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        #anime-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .video-empty {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="player-page">
+    <header>
+        <nav>
+            <a class="player-brand" href="../index.html">
+                <b class="brand-mark">S</b>
+
+                <span>
+                    <em>Shadow</em>
+                    Borne
+                </span>
+            </a>
+
+            <a class="back-link" href="../index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to browse
+            </a>
+        </nav>
+    </header>
+
+    <main class="player-main">
+        <section class="player-heading">
+            <div class="player-poster-frame">
+                <img id="player-poster" src="" alt="">
+            </div>
+
+            <div>
+                <p class="eyebrow">Now watching</p>
+
+                <h1 id="player-title">Jujutsu Kaisen</h1>
+
+                <p id="player-description"></p>
+            </div>
+        </section>
+
+        <section class="video-shell">
+            <iframe id="anime-iframe" src="" allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+            <div class="video-empty" id="video-empty" style="display: none;">Add episode videos in the catalog to start
+                playback.</div>
+        </section>
+
+        <section class="episode-panel">
+            <div class="season-row">
+                <h2>Episodes</h2>
+
+                <select id="season-select" aria-label="Select season"></select>
+            </div>
+
+            <div class="episode-grid" id="episode-grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="../index.html">
+                <span class="brand-mark">S</span>
+                <span>
+                    Shadow
+                    <span>Borne</span>
+                </span>
+            </a>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="./browse.html">Browse</a>
+                <a href="./genres.html">Genres</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./trending.html">Trending</a>
+                <a href="./account.html">Account</a>
+            </nav>
+
+            <p class="footer-copy">&copy; 2026 ShadowBorne. Curated for late-night stories.</p>
+        </div>
+    </footer>
+
+    <script src="../js/anime.js"></script>
+    <script src="../js/player.js"></script>
+</body>
+
+</html>

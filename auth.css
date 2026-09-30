@@ -1,0 +1,144 @@
+.auth-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 80% 10%, rgba(244, 117, 33, .16), transparent 32%),
+        var(--bg-primary);
+}
+
+.auth-layout {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.auth-brand {
+    position: fixed;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+.auth-brand>span {
+    color: var(--accent-orange);
+}
+
+.auth-brand em {
+    color: #fff;
+    font-style: normal;
+}
+
+.auth-card {
+    width: min(100%, 430px);
+    background: rgba(32, 35, 40, .94);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+}
+
+.auth-switcher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .35rem;
+    padding: .25rem;
+    background: #15171a;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.auth-switcher button {
+    color: var(--text-secondary);
+    background: transparent;
+    border: 0;
+    padding: .6rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.auth-switcher button.active {
+    color: #fff;
+    background: var(--accent-orange);
+}
+
+.auth-form {
+    display: none;
+    animation: auth-in .35s ease;
+}
+
+.auth-form.active {
+    display: grid;
+    gap: .8rem;
+}
+
+.auth-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+.auth-form label {
+    color: var(--text-secondary);
+    display: grid;
+    gap: .35rem;
+    font-size: .78rem;
+}
+
+.auth-form input {
+    width: 100%;
+    background: #15171a;
+    color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: .65rem .7rem;
+    font: inherit;
+}
+
+.auth-form input:focus {
+    outline: 1px solid var(--accent-orange);
+}
+
+.auth-submit {
+    color: #fff;
+    background: var(--accent-orange);
+    border: 0;
+    border-radius: 4px;
+    padding: .7rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-submit:hover {
+    background: var(--accent-orange-hover);
+}
+
+.text-button {
+    justify-self: center;
+    color: var(--accent-orange);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-note,
+.auth-message {
+    color: var(--text-secondary);
+    font-size: .78rem;
+    text-align: center;
+}
+
+.auth-message {
+    min-height: 1.2rem;
+    margin-top: 1rem;
+}
+
+@keyframes auth-in {
+    from {
+        opacity: 0;
+        transform: translateX(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

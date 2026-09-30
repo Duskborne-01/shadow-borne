@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Borne | Log In</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-layout">
+        <a class="auth-brand" href="../index.html">
+            <b class="brand-mark">S</b>
+            <span>
+                <em>Shadow</em>
+                Borne
+            </span>
+        </a>
+
+        <section class="auth-card">
+            <div class="auth-switcher">
+                <button class="active" data-auth-view="login">Login</button>
+                <button data-auth-view="signup">Sign up</button>
+            </div>
+
+            <form class="auth-form active" id="login-form">
+                <p class="eyebrow">Welcome back</p>
+
+                <h1>Continue watching</h1>
+
+                <label>
+                    Email or phone
+                    <input name="identity" required autocomplete="username">
+                </label>
+
+                <label>
+                    Password
+                    <input name="password" type="password" required autocomplete="current-password">
+                </label>
+
+                <button class="auth-submit" type="submit">Login</button>
+                <button class="text-button" id="forgot-password" type="button">Forgot password?</button>
+            </form>
+
+            <form class="auth-form" id="signup-form">
+                <p class="eyebrow">Create your account</p>
+
+                <h1>Join ShadowBorne</h1>
+
+                <label>
+                    Email
+                    <input name="email" type="email" required autocomplete="email">
+                </label>
+
+                <label>
+                    Phone number
+                    <input name="phone" type="tel" required autocomplete="tel">
+                </label>
+
+                <label>
+                    Password
+                    <input name="password" type="password" minlength="8" required autocomplete="new-password">
+                </label>
+
+                <label>
+                    Confirm password
+                    <input name="confirmPassword" type="password" minlength="8" required autocomplete="new-password">
+                </label>
+
+                <button class="auth-submit" type="submit">Create account</button>
+            </form>
+
+            <form class="auth-form" id="forgot-form">
+                <p class="eyebrow">Account recovery</p>
+
+                <h1>Reset your password</h1>
+
+                <label>
+                    Email or phone
+                    <input name="identity" required autocomplete="username">
+                </label>
+
+                <button class="auth-submit" type="submit">Continue</button>
+
+                <p class="form-note">OTP delivery will be connected after the website UI is complete.</p>
+            </form>
+
+            <p class="auth-message" id="auth-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="../index.html">
+                <span class="brand-mark">S</span>
+                <span>Shadow
+                    <span>Borne</span>
+                </span>
+            </a>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="./browse.html">Browse</a>
+                <a href="./genres.html">Genres</a><a href="./movies.html">Movies</a>
+                <a href="./trending.html">Trending</a><a href="./account.html">Account</a>
+            </nav>
+
+            <p class="footer-copy">&copy; 2026 ShadowBorne. Curated for late-night stories.</p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>
