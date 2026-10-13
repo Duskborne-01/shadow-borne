@@ -2,7 +2,7 @@ const libraryItems = [...searchAnime];
 
 const genreNames = [
     'Action',
-    'Adventure', 
+    'Adventure',
     'Comedy',
     'Drama',
     'Fantasy',
@@ -49,15 +49,31 @@ const movieItems = [
 ];
 
 const trendingItems = [
-    libraryItems[0],
-    libraryItems[1],
-    libraryItems[2],
-    libraryItems[3],
-    libraryItems[4],
-    libraryItems[5],
-    libraryItems[6],
-    libraryItems[7],
-    libraryItems[9],
+    searchAnime[0],
+    searchAnime[1],
+    searchAnime[4],
+    searchAnime[5],
+    searchAnime[7],
+    searchAnime[8],
+    searchAnime[10],
+    searchAnime[12],
+    searchAnime[13],
+    searchAnime[14],
+    searchAnime[15],
+    searchAnime[16],
+    searchAnime[18],
+    searchAnime[19],
+    searchAnime[20],
+    searchAnime[21],
+    searchAnime[22],
+    searchAnime[24],
+    searchAnime[26],
+    searchAnime[27],
+    searchAnime[28],
+    searchAnime[29],
+    searchAnime[30],
+    searchAnime[31],
+    searchAnime[32]
 ];
 
 function card(item) {
