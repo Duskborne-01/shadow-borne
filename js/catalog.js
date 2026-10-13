@@ -54,7 +54,6 @@ const trendingItems = [
     searchAnime[4],
     searchAnime[5],
     searchAnime[7],
-    searchAnime[8],
     searchAnime[10],
     searchAnime[12],
     searchAnime[13],
@@ -62,17 +61,13 @@ const trendingItems = [
     searchAnime[15],
     searchAnime[16],
     searchAnime[18],
-    searchAnime[19],
     searchAnime[20],
     searchAnime[21],
     searchAnime[22],
-    searchAnime[24],
     searchAnime[26],
     searchAnime[27],
     searchAnime[28],
-    searchAnime[29],
     searchAnime[30],
-    searchAnime[31],
     searchAnime[32]
 ];
 
