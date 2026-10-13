@@ -2,7 +2,7 @@ const libraryItems = [...searchAnime];
 
 const genreNames = [
     'Action',
-    'Adventure',
+    'Adventure', 
     'Comedy',
     'Drama',
     'Fantasy',
